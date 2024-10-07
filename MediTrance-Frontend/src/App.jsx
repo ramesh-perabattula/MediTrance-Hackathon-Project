@@ -23,10 +23,10 @@ const App = () => {
        <Route path='/login' element={<Dologin/>}/>
        <Route path='/Guest' element={<Guest/>}/>
        <Route path='/advanced' element={<Advanced/>}/>
-       <Route path='/loggedin/meditation' element={<HowtoMedit/>}/>
-       <Route path='/loggedin/addfav' element={<Custsessions/>}/>
+       <Route path='/howtomeditate' element={<HowtoMedit/>}/>
+       <Route path='/addfav-session' element={<Custsessions/>}/>
        <Route path='/About' element={<AboutUs/>}/>
-       <Route path='/loggedin/Autosug' element={<Autosug/>}/>
+       <Route path='/Autosug' element={<Autosug/>}/>
        </Routes>
       </BrowserRouter>  
 

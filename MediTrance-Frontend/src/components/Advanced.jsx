@@ -31,13 +31,13 @@ function Advanced ()
 const [totalSeconds, setTotalSeconds]=useState(0);
 
   const howmedit=()=>{
-    window.location.href='/loggedin/meditation';
+    window.location.href='/howtomeditate';
   }
   const clickAdd=()=>{
-    window.location.href=`/loggedin/addfav?email=${emailog}`;
+    window.location.href=`/addfav-session?email=${emailog}`;
   }
   const autogo=()=>{
-    window.location.href=`/loggedin/Autosug?email=${emailog}`;   //  throwing email for automatic dur suggester
+    window.location.href=`/Autosug?email=${emailog}`;   //  throwing email for automatic dur suggester
   }
   
   const onDeleteFav=async (fid)=>{
