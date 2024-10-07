@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+.Guest{
+    background-image: url('../assets/space-girl-timer.png');
+    background-size: cover;
+    height:100vh;
+}
+
+.header{ 
+    display:flex;
+    justify-content:space-between;
+    background-color: rgba(0, 0, 0, 0.813);
+    height:70px;
+}
+#header-medit,#header-abou{
+    padding: 0px 35px;
+    font-size: 1.5rem;
+    color:rgb(17, 175, 193);
+    margin-top:10px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#header-medit:hover,#header-abou:hover{
+    color:rgb(162, 229, 236);
+}
+
+  
+@media (max-width: 800px) {
+     .header{ 
+        height: 20px;
+    }
+    .Guest{
+        background-image: url('../assets/mobile/space-girl-timer.png');
+    }
+   #header-medit,#header-abou{
+        padding: 10px 35px;
+         
+         font-size: 1.2rem;
+        margin-top:30px; 
+    } 
+    
+}

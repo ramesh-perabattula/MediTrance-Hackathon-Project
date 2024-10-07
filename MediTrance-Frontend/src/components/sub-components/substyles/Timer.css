@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+.timer{
+    margin-top: 5vh;
+    background-color: rgba(21, 21, 21, 0.854);
+    width:40vw;
+    height:60vh;
+    border-radius: 30px;
+    align-items: center;
+    padding: 10px;
+    color: rgb(213, 213, 213);
+    /* box-sizing: border-box; */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+    overflow: auto; /* Prevent overflow */
+}   
+
+#timer-times{
+  font-family: 'open sans',sans-serif ;
+    font-size:7rem;
+    font-weight: bold;
+}
+#rangein{
+    cursor:pointer;
+    width: 60%;
+    height: 20px;
+    border-radius: 20px;
+}
+#rangein::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 44px; /* Thumb width */
+    height: 44px; /* Thumb height */
+    border-radius: 50%; /* Circular thumb */
+    background: lightblue; /* Thumb color */
+    cursor: pointer; /* Pointer cursor */
+    box-shadow: 0 0 10px rgba(36, 36, 37, 0.7), 0 0 15px rgba(130, 130, 130, 0.5);
+
+    position: relative; 
+    z-index: 1; /* In front of the track */
+  }
+#button-str,#button-reset,.button-minset{
+    font-size:1.15rem;
+    margin:10px;
+    display: inline-block;
+    padding: 8px 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s, color 0.3s;
+    background-color: #d4d4d4;
+}
+#button-str:hover,#button-reset:hover,.button-minset:hover{
+    background-color: rgb(17, 175, 193);
+} 
+.bells {
+    position:absolute;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  } 
+  
+label{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.radio-button-container {
+    margin-left: 30px;
+    /* display: flex; */
+    align-items: center;
+    gap: 24px;
+    /* background-color: aqua; */
+    color: #d4d4d4;
+    padding-bottom: 10px;
+  }
+  
+  .radio-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+  
+  .radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 1.7rem;
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+    color:#d4d4d4;
+    font-weight: 600;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__input:checked + .radio-button__label .radio-button__custom {
+    background-color: #4c8bf5;
+    border-color: transparent;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #4c8bf580;
+  }
+  
+  .radio-button__input:checked + .radio-button__label {
+    color: #095be9;
+  }
+  
+  .radio-button__label:hover .radio-button__custom {
+    transform: scale(1.2);
+    border-color: #4c8bf5;
+    box-shadow: 0 0 20px #4c8bf580;
+  }
+  
+  
+  
+  
+  
+  
+@media (max-width: 800px) {
+    
+    #timer-times{
+        font-size:2.5rem;
+    }
+ .timer{
+    margin-top: 40px;
+        width: 80vw;
+        height: 90vh;
+    } 
+    #button-str,#button-reset,.button-minset{
+        font-size:1.3rem;
+        margin:20px;
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 80px;
+    }
+
+    label{
+        font-size: 1.3rem;
+        margin: 7px;
+    }
+}

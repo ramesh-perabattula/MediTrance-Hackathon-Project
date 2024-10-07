@@ -1,0 +1,97 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.header-cust{
+    background-color:rgba(0, 0, 0, 0.902);
+    width:100vw;
+    height:70px;
+    color:rgb(17, 175, 193);
+    font-size:1.7rem;
+    font-weight:bold;
+    display:flex;
+    justify-content:space-between;
+
+}
+#header-cust-medi,#header-cust-about
+{padding: 0px 35px;
+    /* font-size: 1.5rem; */
+    color:rgb(17, 175, 193);
+    margin-top:10px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* padding-left:250px; */
+    font-size:3rem;
+}
+#header-cust-about{
+    cursor: pointer;
+}
+
+.addses-input{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 400px;
+    background-color: #d1d1d1; /* Slightly off-black for form */
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stylish shadow */
+}
+.Addfavorite{
+   background-image: url("../assets/img3.webp");
+   height:100vh;
+   background-size: cover;
+}
+
+.form{
+    background-color: rgba(34, 138, 154, 0.274);
+    width:40vw;
+    height:40vh;
+    margin-top: 60px;
+    border-radius:15px;
+}
+#addfav-btn{
+    margin-top:15px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s, color 0.3s;
+    background-color: rgb(255, 255, 255);
+}
+#addfav-btn:hover{
+    background-color:rgb(162, 229, 236);
+}
+
+@media (max-width: 800px) {
+    .header-cust{
+        height: 140px; /* Adjusted height for mobile */
+        
+    }
+    #header-cust-medi,#header-cust-about
+{
+    font-size: 3.3rem;
+    
+        margin-top:20px;
+}
+.form{
+    width:80vw;
+    height:35vh;
+    margin-top: 160px;
+    border-radius:55px;
+}
+
+#addfav-btn{
+    margin-top: 60px;
+font-size: 2rem;
+}
+#spacer{
+    margin-top: 80px;
+}
+}

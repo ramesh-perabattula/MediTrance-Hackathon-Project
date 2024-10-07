@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+
+.home-header {
+    position: relative; /* Ensure these elements are above the overlay */
+    z-index: 1;
+ 
+    width:100%;
+    height:80px;
+    background-color: rgba(7, 7, 7, 0.689);
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding-top:15px;
+}
+ .nav-div{
+ /* margin-right: 1.7%;  */
+ display: flex;
+ width: 35%;
+ height: 7.5vh;  
+ }  
+.nav-div-li{
+    margin-right: 2.5%;
+    margin-top:10px;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;    
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s, color 0.3s;
+    background-color: rgb(17, 175, 193);
+    color:black;
+}
+.nav-div-li:hover{
+    background-color:#fff;
+}
+
+#home-head-medit {
+    width:99%;
+    margin-left: 1.8%;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-size:3rem;
+  }
+  
+  
+/* .nav-div-li:hover{
+    color:rgba(51, 9, 9, 0.723);
+    cursor:pointer;
+} */
+#nav-div-adv{
+    width:185px;
+}
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+    
+    .home-header {
+        flex-direction: column;
+         height: 11%; /* Adjusted height for mobile */
+        padding: 10px;
+    }
+    .nav-div-li {
+        
+       /* Adjusted margin to add horizontal space */
+        font-size: 0.7rem; /* Adjusted font-size for mobile */
+        padding: 5px 5px;
+        width: 40%; /* Adjusted width */
+        text-align:center; /* Center align text */
+    }
+    
+    #home-head-medit {
+        padding-left: 0;
+        font-size: 2.5rem; /* Adjusted font-size for mobile  */
+    } 
+}
+
+
+
+
