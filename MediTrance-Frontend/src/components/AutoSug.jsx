@@ -15,7 +15,7 @@ function Autosug() {
 const retAgeofUser=async()=>
   {  try {
       console.log(emailog);
-      const response = await axios.get(`http://localhost:5000/user_inf/${emailog}`);
+      const response = await axios.get(`https://meditrance-api.vercel.app/user_inf/${emailog}`);
       setUserInfo(response.data[0]);
       } catch (error) {
       console.log("email not found");

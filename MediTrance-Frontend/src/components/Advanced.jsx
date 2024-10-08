@@ -16,7 +16,7 @@ function Advanced ()
   const getFavSess=async()=>{
     try {
       console.log(emailog);
-      const response = await axios.get(`http://localhost:5000/favsess/${emailog}`);
+      const response = await axios.get(`https://meditrance-api.vercel.app/favsess/${emailog}`);
       setFavSess(response.data);
       } catch (error) {
       console.log("favsess not found");
@@ -42,7 +42,7 @@ const [totalSeconds, setTotalSeconds]=useState(0);
   
   const onDeleteFav=async (fid)=>{
     try {
-      await axios.delete(`http://localhost:5000/favsess/${fid}`);
+      await axios.delete(`https://meditrance-api.vercel.app/favsess/${fid}`);
       getFavSess();
     } catch (error) {
       console.error('Error deleting fav session:', error);

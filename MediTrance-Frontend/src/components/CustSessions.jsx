@@ -23,7 +23,7 @@ function CustSessions ()  {
         e.preventDefault();
         try{
             favorite.email=emailog;
-            axios.post('http://localhost:5000/favsess',favorite).then(response=>{
+            axios.post('https://meditrance-api.vercel.app/favsess',favorite).then(response=>{
                 alert("Favorite Succesfully Added!");
                 Setfavorite({title:'',min:'',sec:'',email:''});
                 /*redirect to loggedin */

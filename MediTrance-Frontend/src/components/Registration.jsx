@@ -24,7 +24,7 @@ function Registration()
             alert('password must contain 6 letters');
          }
         try{
-            axios.post('http://localhost:5000/user_inf',user).then(response=>{
+            axios.post('https://meditrance-api.vercel.app/user_inf',user).then(response=>{
                     alert("registered Succesfully!");
                     setUser({name:'',email:'',password:'',age:''});
                     window.location.href = '/login';

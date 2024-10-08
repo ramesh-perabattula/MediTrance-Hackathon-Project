@@ -19,7 +19,7 @@ const submitHandler= async(e)=>{
   }
   
   try {
-    const response = await axios.post('http://localhost:5000/login', user);
+    const response = await axios.post('https://meditrance-api.vercel.app/login', user);
    
     if (response.data.success) {
       alert("Logged in successfully!");
