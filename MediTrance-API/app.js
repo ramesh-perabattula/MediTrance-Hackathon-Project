@@ -14,9 +14,7 @@ app.use(bodyParser.json());
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const mongoURI =
-  process.env.MONGO_URI ||
-  "mongodb+srv://Meditrance_API:Meditrance%40123@cluster0.oetsi.mongodb.net/meditrancedb?retryWrites=true&w=majority";
+const mongoURI = process.env.MONGO_URI;  // mongo db cloud url is hidden to env file
 mongoose
   .connect(mongoURI)
   .then(() => {
