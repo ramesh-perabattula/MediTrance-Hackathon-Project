@@ -49,8 +49,8 @@ const [totalSeconds, setTotalSeconds]=useState(0);
     }
   }
   const onSetFav=(minp,secp)=>{
-    setMinutes(minp);
-    setSeconds(secp)
+    // setMinutes(minp);
+    // setSeconds(secp);
     const tsecp =(minp*60) +secp;
 setTotalSeconds(tsecp);
 

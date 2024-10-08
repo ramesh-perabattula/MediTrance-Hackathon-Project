@@ -27,7 +27,7 @@ function CustSessions ()  {
                 alert("Favorite Succesfully Added!");
                 Setfavorite({title:'',min:'',sec:'',email:''});
                 /*redirect to loggedin */
-                window.location.href=`/loggedin?email=${emailog}`;
+                window.location.href=`/advanced?email=${emailog}`;
             })
         }
         catch(error)

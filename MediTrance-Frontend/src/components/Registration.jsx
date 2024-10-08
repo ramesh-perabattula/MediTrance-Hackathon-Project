@@ -65,7 +65,7 @@ function Registration()
             <form onSubmit={submitHandler} >
                 <input 
                     type="text"
-                    placeholder="Enter the username"
+                    placeholder="Enter your name"
                     onChange={changeHandler}
                     value={user.name}
                     name="name"
