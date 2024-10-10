@@ -16,19 +16,23 @@ function Registration()
         const { name, value } = e.target;
         setUser({ ...user, [name]: value });
     };
+    const [isValid,setisValid]=useState("true");
 
     const submitHandler = (e) => {
         e.preventDefault();
          if(user.name===""){
-             alert('Name should not be empty');
+            setisValid("false");
+            alert('Name should not be empty');
         }
         else if(user.email===""){
-             alert('Email sholud not b');
+            setisValid("false");
+            alert('Email sholud not be empty');
         }
         else if(user.password.length<6) {
-             alert('password must contain 6 letters');
+            setisValid("false");
+            alert('password must contain 6 letters');
         }
-        else {
+        if(isValid){
             try{
                 axios.post('https://meditrance-api.vercel.app/user_inf',user).then(response=>{
                         alert("registered Succesfully!");
